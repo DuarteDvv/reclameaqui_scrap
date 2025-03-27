@@ -1,0 +1,15 @@
+[Unit]
+Description= scrapping script
+After=network.target
+
+[Service]
+ExecStart=/home/luis/Documentos/reclameaqui_scrap.py
+Restart=always
+RestartSec=60
+User=luis
+WorkingDirectory=/home/luis
+StandardOutput=append:/home/luis/Documentos/scrap.log
+StandardError=append:/home/luis/Documentos/scrapError.log
+
+[install]
+WantedBy=multi-user.target
