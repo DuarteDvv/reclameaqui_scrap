@@ -11,5 +11,3 @@ WorkingDirectory=/home/luis/Documentos/reclameaqui_scrap/
 StandardOutput=append:/home/luis/Documentos/scrap.log
 StandardError=append:/home/luis/Documentos/scrapError.log
 
-[install]
-WantedBy=multi-user.target

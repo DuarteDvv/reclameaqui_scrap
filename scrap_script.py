@@ -83,9 +83,11 @@ for empresa in empresas[:50]:
     if not os.path.exists(f'hyperlinks/hyperlinks_{empresa}.csv'):
     
         for i in range(Numero_de_paginas):
+            
+            driver = uc.Chrome()
 
             try:
-                driver = uc.Chrome()
+                
                 
                 driver.get(url_r(page=i + 1, type='EVALUATED'))
                 
