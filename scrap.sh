@@ -10,6 +10,6 @@ while true; do
     /home/luis/Documentos/reclameaqui_scrap/venv/bin/python /home/luis/Documentos/reclameaqui_scrap/scrap_script.py
 
     echo "O script falhou. Reiniciando em 60 segundos..." >> /home/luis/Documentos/scrapError.log
-    sleep 600 
+    sleep 300
 
 done

@@ -16,5 +16,6 @@ systemctl status scrap.service
 
 # shellscript
 
-chmod +X scrap.sh
+chmod +X ./scrap.sh
+chmod 755 ./scrap.sh
 ./scrap.sh
