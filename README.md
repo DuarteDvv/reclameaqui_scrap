@@ -13,3 +13,8 @@ sudo systemctl daemon-reload
 sudo systemctl enable scrap.service
 sudo systemctl start scrap.service
 systemctl status scrap.service
+
+# shellscript
+
+chmod +X scrap.sh
+./scrap.sh
