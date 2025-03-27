@@ -8,6 +8,7 @@ source venv/bin/activate
 # systemd
 
 sudo cp scrap.service /etc/systemd/system/ 
+sudo rm /etc/systemd/system/scrap.service  
 sudo systemctl daemon-reload
 sudo systemctl enable scrap.service
 sudo systemctl start scrap.service
