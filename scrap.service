@@ -7,7 +7,7 @@ ExecStart=/home/luis/Documentos/reclameaqui_scrap/venv/bin/python /home/luis/Doc
 Restart=always
 RestartSec=60
 User=luis
-WorkingDirectory=/home/luis
+WorkingDirectory=/home/luis/Documentos/reclameaqui_scrap/
 StandardOutput=append:/home/luis/Documentos/scrap.log
 StandardError=append:/home/luis/Documentos/scrapError.log
 
