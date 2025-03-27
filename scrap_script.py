@@ -11,9 +11,7 @@ import setuptools._distutils
 empresas_totoal = pd.read_csv('empresas_total.csv')
 empresas = empresas_totoal['Nome'].tolist()
 
-e = ['malibu']
-
-for empresa in e:
+for empresa in empresas[:50]:
 
     # URL da pagina principal da empresa
     url_p = 'https://www.reclameaqui.com.br/empresa/' + empresa + '/'
