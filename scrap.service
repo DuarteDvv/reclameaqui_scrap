@@ -3,7 +3,7 @@ Description= scrapping script
 After=network.target
 
 [Service]
-ExecStart=/home/luis/Documentos/reclameaqui_scrap.py
+ExecStart=/home/luis/Documentos/reclameaqui_scrap/venv/bin/python /home/luis/Documentos/reclameaqui_scrap/scrap_script.py
 Restart=always
 RestartSec=60
 User=luis
