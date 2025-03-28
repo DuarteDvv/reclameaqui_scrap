@@ -8,6 +8,6 @@ while true; do
     
     *env/bin/python scrap_script.py
 
-    sleep 120
+    sleep 60
 
 done
