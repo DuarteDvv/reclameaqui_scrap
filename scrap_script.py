@@ -57,7 +57,8 @@ for empresa in empresas[:50]:
             metadata_p = pd.DataFrame(metadata, index=[0])
             metadata_p.to_csv(f'metadados/metadados_{empresa}.csv', index=False)
             
-        except: 
+        except Exception as e:
+            print(e)
             driver.quit()
             os._exit(1)
 
@@ -83,7 +84,7 @@ for empresa in empresas[:50]:
     if not os.path.exists(f'hyperlinks/hyperlinks_{empresa}.csv'):
     
         for i in range(Numero_de_paginas):
-            
+
             driver = uc.Chrome()
 
             try:
@@ -110,6 +111,7 @@ for empresa in empresas[:50]:
 
                 
             except Exception as e:
+                print(e)
                 driver.quit()
                 os._exit(1)
               
@@ -125,7 +127,6 @@ for empresa in empresas[:50]:
         df = pd.read_csv(f'hyperlinks/hyperlinks_{empresa}.csv')
         all_hyperlinks = df["Hyperlinks"].tolist()
 
-    print(all_hyperlinks)
     
 
     
@@ -188,8 +189,8 @@ for empresa in empresas[:50]:
                 
                 print(reclamacao)
                 
-            except:
-                
+            except Exception as e:
+                print(e)
                 driver.quit()
                 os._exit(1)
 
@@ -207,7 +208,5 @@ for empresa in empresas[:50]:
         df = pd.read_csv(f'reclamacoes/reclamacoes_{empresa}.csv')
         reclamacoes = df.to_dict(orient='records')
                 
-    
-    print(reclamacoes)
 
 

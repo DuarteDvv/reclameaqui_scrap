@@ -13,9 +13,14 @@ sudo systemctl daemon-reload
 sudo systemctl enable scrap.service
 sudo systemctl start scrap.service
 systemctl status scrap.service
+sudo systemctl stop scrap.service
 
 # shellscript
 
 chmod +X ./scrap.sh
 chmod 755 ./scrap.sh
+chown luis:luis /home/luis/Documentos/scrap.log /home/luis/Documentos/scrapError.log
+chmod 666 /home/luis/Documentos/scrap.log /home/luis/Documentos/scrapError.log
+
+
 ./scrap.sh
