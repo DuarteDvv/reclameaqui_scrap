@@ -1,9 +1,11 @@
 
-from get_metadados import get_metadados
-from get_hyperlinks import get_hyperlinks
-from get_reclamacoes import get_reclamacoes
+from Mod.get_metadados import get_metadados
+from Mod.get_hyperlinks import get_hyperlinks
+from Mod.get_reclamacoes import get_reclamacoes
+
 
 def scrap(empresas : list):
+
 
     for empresa in empresas:
 

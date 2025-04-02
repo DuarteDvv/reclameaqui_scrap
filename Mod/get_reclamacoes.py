@@ -18,7 +18,7 @@ def get_reclamacoes(empresa : str, all_hyperlinks : list) -> None:
         df = pd.read_csv(f'reclamacoes/reclamacoes_{empresa}.csv')
         n_coletadas = df.shape[0]
 
-    driver = uc.Chrome()
+    driver = uc.Chrome(use_subprocess=True)
     
     get_reclamacoes(driver, empresa, all_hyperlinks, n_coletadas)
 

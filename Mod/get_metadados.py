@@ -15,7 +15,7 @@ def get_metadados(empresa : str) -> None:
     if not os.path.exists(f'metadados/metadados_{empresa}.csv'):
         try:
 
-            driver = uc.Chrome()
+            driver = uc.Chrome(use_subprocess=True)
 
             # acessando a pagina principal da empresa
             driver.get(url_p)

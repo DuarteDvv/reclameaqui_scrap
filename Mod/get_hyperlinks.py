@@ -24,7 +24,7 @@ def get_hyperlinks(empresa : str) -> list:
     
         for i in range(Numero_de_paginas):
 
-            driver = uc.Chrome()
+            driver = uc.Chrome(use_subprocess=True)
 
             try:
                 

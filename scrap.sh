@@ -6,7 +6,7 @@ source *env/bin/activate
 
 while true; do
     
-    *env/bin/python scrap_script.py
+    *env/bin/python main.py -a exemplo_empresas.csv 
 
     sleep 60
 
